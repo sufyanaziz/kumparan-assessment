@@ -110,6 +110,7 @@ const DetailPostContainer = styled.div`
 
               .body {
                 margin-top: 10px;
+                white-space: pre-wrap;
               }
 
               .action {
@@ -131,7 +132,7 @@ const DetailPostContainer = styled.div`
           padding: 16px 0 10px 0;
           width: 100%;
           display: flex;
-          input {
+          textarea {
             width: 90%;
             margin-right: auto;
             padding: 8px;
@@ -261,7 +262,7 @@ const DetailPost = ({ singlePost, comments, author, userProps }) => {
           </div>
 
           <div className="actions">
-            <input
+            <textarea
               placeholder="comment here..."
               onChange={e => setInputComment(e.target.value)}
               value={inputComment}
