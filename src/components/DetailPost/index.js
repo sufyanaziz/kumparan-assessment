@@ -19,7 +19,7 @@ const DetailPostContainer = styled.div`
   .detailPost {
     &__author {
       text-align: center;
-      flex: 0.5;
+      flex: 0.6;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -44,25 +44,27 @@ const DetailPostContainer = styled.div`
       }
 
       .post {
-        height: 250px;
-        overflow: scrollY;
         width: 100%;
         margin-top: 10px;
       }
       .card-post {
+        max-height: 180px;
         border: 1px solid black;
+        overflow-y: auto;
         padding: 16px 10px;
         margin-top: 10px;
         margin-bottom: 16px;
+        white-space: pre-wrap;
+        text-align: left;
 
         p:nth-child(1) {
-          font-size: 20px;
+          font-size: 16px;
           font-weight: bold;
           text-transform: capitalize;
           margin-bottom: 10px;
         }
         p:last-child {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }

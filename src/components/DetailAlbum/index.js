@@ -90,7 +90,7 @@ const DetailAlbumContainer = styled.div`
       align-items: center;
       justify-content: center;
       padding: 0 16px;
-      text-align: center;
+      text-align: left;
       p:nth-child(1) {
         font-size: 28px;
         margin-bottom: 10px;

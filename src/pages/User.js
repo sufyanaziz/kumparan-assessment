@@ -128,6 +128,8 @@ const UserPageContainer = styled.div`
           overflow: hidden;
           width: 100%;
           display: -webkit-box;
+          white-space: pre-wrap;
+          text-align: left;
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
           height: 135px;
