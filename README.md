@@ -8,6 +8,8 @@ This is my technical frontend answer, I hope this task given to me is in accorda
 
 ## About App
 
+> this style of the app just for pc or desktop, not for mobile or tablet
+
 this app can run locally
 
 - npm run install or yarn install in the root directory
@@ -16,3 +18,5 @@ this app can run locally
 or can run in heroku
 
 - Link preview **[sufyan-kumparan-assessment](https://sufyan-kumparan-assessment.herokuapp.com/)**.
+
+
