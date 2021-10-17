@@ -34,7 +34,7 @@ const UserPageContainer = styled.div`
     color: var(--dark);
     &__header {
       display: grid;
-      grid-template-columns: 300px 1fr 1fr;
+      grid-template-columns: 250px 1fr 0.5fr;
       grid-gap: 0 10px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       padding-bottom: 20px;
@@ -100,7 +100,7 @@ const UserPageContainer = styled.div`
 
     &__content {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 10px;
 
       .card {
@@ -175,6 +175,11 @@ const UserPage = props => {
   }, [dispatch, userId]);
 
   const { userProps, postProps, albumProps } = props;
+
+  useEffect(() => {
+    if (userProps.user === null) return;
+    document.title = `User Page - ${userProps.user.name} (sufyan-kumparan-assessment)`;
+  }, [userProps]);
 
   if (userProps.loading && postProps.loading && albumProps.loading)
     return <PageLoading />;
