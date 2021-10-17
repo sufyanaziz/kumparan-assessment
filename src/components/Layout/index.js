@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const LayoutContainer = styled.div`
   .layout-child {
-    margin: 2rem 6rem;
+    margin: 2rem 4rem;
   }
 `;
 

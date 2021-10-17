@@ -31,9 +31,9 @@ const ModalContainer = styled.div`
       z-index: 2;
       top: ${props => props.pageHeight}px;
       left: 50%;
-      transform: translate(-50%, 25%);
+      transform: translate(-50%, 20%);
       border-radius: 4px;
-      height: 70vh;
+      height: 75vh;
       width: 80vw;
       box-shadow: 0 0 3 rgba(0, 0, 0, 0.5);
     }
