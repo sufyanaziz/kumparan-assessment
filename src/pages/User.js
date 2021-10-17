@@ -132,7 +132,7 @@ const UserPageContainer = styled.div`
           text-align: left;
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
-          height: 135px;
+          height: 130px;
           margin-bottom: 20px;
         }
 
