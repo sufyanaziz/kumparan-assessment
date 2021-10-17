@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Layout from "../components/Layout";
@@ -22,6 +22,9 @@ const ErrorContainer = styled.div`
 `;
 
 const Error = () => {
+  useEffect(() => {
+    document.title = "404 - Page is doesn't exist";
+  }, []);
   return (
     <Layout>
       <ErrorContainer>
