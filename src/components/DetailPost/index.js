@@ -248,7 +248,10 @@ const DetailPost = ({ singlePost, comments, author, userProps }) => {
                             const confirm = window.confirm(
                               "are you sure, delete this comment?"
                             );
-                            if (confirm) dispatch(deleteComments(comment.id));
+                            if (confirm) {
+                              setInputComment("");
+                              dispatch(deleteComments(comment.id));
+                            }
                           }}
                         >
                           Delete
