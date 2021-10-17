@@ -61,6 +61,7 @@ const Home = props => {
   const { userProps } = props;
 
   useEffect(() => {
+    document.title = "Home Page (sufyan-kumparan-assessment)";
     dispatch(getUsers());
   }, [dispatch]);
 
